@@ -18,7 +18,6 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: resume.tex
-          latexmk_use_pdf: true
 
       - name: Rename PDF
         run: sudo mv resume.pdf Palash_Pawar_Resume.pdf
