@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in LaTeX
+% Based on Jake Gutierrez's template (MIT): https://github.com/jakegut/resume
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Experience entry with a single date column (no location)
+\newcommand{\resumeJob}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \multicolumn{2}{l}{\textit{\small #3}} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Palash Pawar} \\ \vspace{1pt}
+    \small 832.515.2271 $|$ \href{mailto:palash.pawar@utexas.edu}{\underline{palash.pawar@utexas.edu}} $|$
+    \href{https://linkedin.com/in/palash-pawar}{\underline{linkedin.com/in/palash-pawar}} $|$
+    \href{https://github.com/palashpawar}{\underline{github.com/palashpawar}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Texas at Austin}{Austin, TX}
+      {Bachelor of Science in Statistics \& Data Science}{May 2028}
+      \vspace{-6pt}
+      \item[] {\textbf{Relevant Coursework:} Data Structures \& Algorithms, Probability \& Statistical Inference, Sports Analytics, Data Visualization, Databases \& SQL, Linear Algebra, Machine Learning, Geospatial AI}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+     \textbf{Languages}{: Python, R, SQL} \\
+     \textbf{Platforms}{: Databricks, Snowflake, AWS, GCP, Git, Looker, Power BI, Tableau, Excel, PyTorch, TensorFlow} \\
+     \textbf{Techniques}{: Quantitative Analysis, Regression, Classification, NLP, LLMs, Computer Vision, A/B Testing}
+    }}
+ \end{itemize}
+ \vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeJob
+      {JPMorganChase}{October 2026}
+      {Data For Good Participant (Client: National Basketball Players Association)}
+      \resumeItemListStart
+        \resumeItem{Built a fixed-effects model on 60K NBA games showing back-to-backs cut win odds $\sim$6\%, validated with XGBoost}
+        \resumeItem{Shipped CourtSide, a D3.js dashboard with an LLM chatbot revealing up to 1.8-win gaps in NBA schedules}
+      \resumeItemListEnd
+
+    \resumeJob
+      {Dell Medical School}{August 2026 -- Present}
+      {Undergraduate Research Assistant (Virostko Lab)}
+      \resumeItemListStart
+        \resumeItem{Conducting medical research by analyzing multimodal data to identify patterns associated with Type 2 Diabetes}
+      \resumeItemListEnd
+
+    \resumeJob
+      {Databricks}{June 2026 -- August 2026}
+      {Data Engineer Intern (Platform Engineering)}
+      \resumeItemListStart
+        \resumeItem{Architected a Databricks Lakehouse, integrating 3 sources and reducing data latency across 18 production tables}
+        \resumeItem{Designed PySpark ETL pipelines with Delta Lake and Lakeflow orchestration, improving efficiency by 75\%}
+      \resumeItemListEnd
+
+    \resumeJob
+      {American Airlines}{August 2025 -- January 2026}
+      {Data Scientist Intern}
+      \resumeItemListStart
+        \resumeItem{Built predictive time series models for flight arrival delay forecasting, improving accuracy $\sim$15\% over baselines}
+        \resumeItem{Analyzed 2M+ flight records and conducted exploratory data analysis (EDA) with data cleaning and preprocessing}
+        \resumeItem{Optimized feature engineering, hyperparameter tuning, and model validation to increase predictive accuracy}
+      \resumeItemListEnd
+
+    \resumeJob
+      {Emerson}{May 2025 -- August 2025}
+      {Data Scientist Intern}
+      \resumeItemListStart
+        \resumeItem{Built SQL/Azure data pipelines to compute, validate, and monitor KPIs across 7+ DeltaV v16.LTS product areas}
+        \resumeItem{Designed Power BI dashboards to visualize release readiness trends and detect high-risk modules in real time}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Kalshi Earnings Mentions Bot} $|$ \emph{Claude Code, GCP Compute, SQLite, Kalshi API, SciPy, statsmodels, launchd}}{}
+          \resumeItemListStart
+            \resumeItem{Backtested a systematic alpha across 5.19M Kalshi earnings-mention contracts (+4.1\textcent/contract alpha, t = 1.95)}
+            \resumeItem{Built a 3-mode trading execution engine with risk-gating, scanning 850 instruments / 250K API calls per day}
+            \resumeItem{Engineered a Google News sentiment filter, Nasdaq earnings-calendar features, and DuckDB/SQLite tick pipelines}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{SPY Volatility Surface \& Options Market Maker} $|$ \emph{NumPy, SciPy, pandas, yfinance, pytest, scikit-learn}}{}
+          \resumeItemListStart
+            \resumeItem{Built a SPY options market-making system with pricing, Greeks, implied-volatility surfaces, and real-market data}
+            \resumeItem{Developed relative-value signals with inventory-aware quoting, transaction costs, and dynamic delta hedging}
+            \resumeItem{Evaluated with walk-forward testing, achieving a 1.4 Sharpe Ratio and 18\% higher risk-adjusted P\&L}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Moneyball 2.0: Analyzing Value in the Global Soccer Transfer Market} $|$ \emph{tidyverse, caret, ggplot2}}{}
+          \resumeItemListStart
+            \resumeItem{Built an end to end pipeline modeling player market value, engineering 30+ advanced performance features}
+            \resumeItem{Performed residual based analysis to identify overvalued and undervalued players across leagues and positions}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------ACTIVITIES-----------
+\section{Activities \& Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Activities}{: IM Soccer, Business of Sports Institute at McCombs, Texas Dhoom (Bollywood Fusion Dance Team)} \\
+     \textbf{Interests}{: Soccer, Financial/Commodity Markets, Algorithmic Trading, College Football, Traveling, Card Games}
+    }}
+ \end{itemize}
+ \vspace{-10pt}
+
+%-------------------------------------------
+\end{document}
