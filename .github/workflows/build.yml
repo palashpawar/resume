@@ -19,7 +19,9 @@ jobs:
         with:
           root_file: resume.tex
           latexmk_use_pdf: true
-          extra_compiler_args: -jobname=Palash_Pawar_Resume
+
+      - name: Rename PDF
+        run: sudo mv resume.pdf Palash_Pawar_Resume.pdf
 
       - name: Check it is one page
         run: |
