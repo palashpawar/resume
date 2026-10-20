@@ -40,7 +40,7 @@
 
 % Section formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generated PDF is machine readable/ATS parsable
@@ -64,7 +64,7 @@
 
 % Experience entry with a single date column (no location)
 \newcommand{\resumeJob}[3]{
-  \vspace{-2pt}\item
+  \vspace{-5pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \multicolumn{2}{l}{\textit{\small #3}} \\
@@ -82,7 +82,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, topsep=2pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -131,6 +131,13 @@
       \resumeItemListEnd
 
     \resumeJob
+      {SRND AI}{October 2026 -- Present}
+      {Data Scientist Intern}
+      \resumeItemListStart
+        \resumeItem{Building a proprietary music artist management platform powered by AI}
+      \resumeItemListEnd
+
+    \resumeJob
       {JPMorganChase}{October 2026}
       {Data For Good Participant (Client: National Basketball Players Association)}
       \resumeItemListStart
@@ -159,7 +166,14 @@
       \resumeItemListStart
         \resumeItem{Built predictive time series models for flight arrival delay forecasting, improving accuracy $\sim$15\% over baselines}
         \resumeItem{Analyzed 2M+ flight records and conducted exploratory data analysis (EDA) with data cleaning and preprocessing}
-        \resumeItem{Optimized feature engineering, hyperparameter tuning, and model validation to increase predictive accuracy}
+      \resumeItemListEnd
+
+    \resumeJob
+      {Emerson}{May 2025 -- August 2025}
+      {Data Scientist Intern}
+      \resumeItemListStart
+        \resumeItem{Built SQL/Azure data pipelines to compute, validate, and monitor KPIs across 7+ DeltaV v16.LTS product areas}
+        \resumeItem{Designed Power BI dashboards to visualize release readiness trends and detect high-risk modules in real time}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -172,7 +186,7 @@
           {\textbf{Kalshi Earnings Mentions Bot} $|$ \emph{Claude Code, GCP Compute, SQLite, Kalshi API, SciPy, statsmodels, launchd}}{}
           \resumeItemListStart
             \resumeItem{Backtested a systematic alpha across 5.19M Kalshi earnings-mention contracts (+4.1\textcent/contract alpha, t = 1.95)}
-            \resumeItem{Built a 3-mode trading execution engine with risk-gating, scanning 850 instruments / 250K API calls per day}
+            \resumeItem{Built a 3-mode trading execution engine with risk-gating, scanning 850 instruments/$\sim$250K API calls per day}
             \resumeItem{Engineered a Google News sentiment filter, Nasdaq earnings-calendar features, and DuckDB/SQLite tick pipelines}
           \resumeItemListEnd
 
@@ -198,7 +212,8 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Activities}{: IM Soccer, Texas Dhoom (Bollywood Fusion Dance Team), Stats \& Data Science Directed Reading Program} \\
-     \textbf{Interests}{: Soccer, Financial/Commodity Markets, Algorithmic Trading, College Football, Traveling, Card Games}
+     \textbf{Interests}{: Soccer, Financial/Commodity Markets, Algorithmic Trading, College Football, Traveling, Card Games} \\
+     \textbf{Awards}{: 1st Place @ 2026 JPMorganChase Data for Good Hackathon, 3rd Place @ 2024 DECA ICDC}
     }}
  \end{itemize}
  \vspace{-10pt}
