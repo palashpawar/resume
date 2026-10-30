@@ -30,7 +30,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -72,7 +72,7 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
+    \vspace{-4pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
@@ -113,7 +113,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     {\item{
      \textbf{Languages}{: Python, R, SQL} \\
-     \textbf{Platforms}{: Databricks, Snowflake, AWS, GCP, Git, Looker, Power BI, Tableau, Excel, PyTorch, TensorFlow} \\
+     \textbf{Platforms}{: Databricks, Snowflake, MongoDB, AWS, GCP, Looker, Power BI, Tableau, PyTorch, TensorFlow} \\
      \textbf{Techniques}{: Quantitative Analysis, Regression, Classification, NLP, LLMs, Computer Vision, A/B Testing}
     }}
  \end{itemize}
@@ -127,30 +127,33 @@
       {Google x Business of Sports Institute at McCombs}{October 2026 -- Present}
       {Sports Analytics Researcher @ Bevo Lab}
       \resumeItemListStart
-        \resumeItem{Developing sports analytics projects for Texas Athletics in collaboration with Google Cloud}
-      \resumeItemListEnd
-
-    \resumeJob
-      {SRND AI}{October 2026 -- Present}
-      {Data Scientist Intern}
-      \resumeItemListStart
-        \resumeItem{Developing a proprietary AI-powered platform for music artist management}
+        \resumeItem{Building weekly advance scouting reports for Texas Football in BigQuery/Dataform from Catapult/PFF data}
+        \resumeItem{Charting opponent coverage, pressure, and blitz tendencies by down \& distance via source-validated LLM analysis}
       \resumeItemListEnd
 
     \resumeJob
       {JPMorganChase}{October 2026}
-      {Data for Good Hackathon $|$ 1st Place (Client: National Basketball Players Association)}
+      {Data for Good Hackathon $|$ 1st Place Winner (Client: National Basketball Players Association)}
       \resumeItemListStart
         \resumeItem{Modeled 60K NBA games with fixed effects, showing back-to-backs cut win odds $\sim$6\%, validated with XGBoost}
         \resumeItem{Shipped CourtSide, a D3.js dashboard with an LLM chatbot revealing up to 1.8-win gaps in NBA schedules}
       \resumeItemListEnd
 
     \resumeJob
+      {Coinbase}{September 2026}
+      {Insights to Impact Bounty $|$ Top 20 Winner}
+      \resumeItemListStart
+        \resumeItem{Constructed a signup-to-first-trade funnel (KYC, deposit) unifying 3 event sources with 6 data-quality checks}
+        \resumeItem{Traced a 7-point gap in weekly trader conversion ($\sim$41\% vs $\sim$34\%) to a SQL join double-counting trades}
+      \resumeItemListEnd
+
+    \resumeJob
       {Dell Medical School}{August 2026 -- Present}
       {Undergraduate Research Assistant @ Virostko Lab}
       \resumeItemListStart
-        \resumeItem{Engineered a multimodal Python pipeline (glucose, wearable, ECG, retinal) for a 100-person diabetes cohort}
-        \resumeItem{Showed glucose monitoring best predicts diabetes stage (AUC 0.77); standard time-in-range misses pre-diabetes}
+        \resumeItem{Developed a multimodal Python pipeline (CGM, wearable, ECG, retinal imaging) for a 100-person diabetes study}
+        \resumeItem{Validated AutoMorph retinal vessel-width measurements as reproducible across cameras (ICC 0.87)}
+        \resumeItem{Cross-validated models: CGM best predicted diabetes stage (AUC 0.77); retina raised systolic-BP R\textsuperscript{2} $\sim$0 $\rightarrow$ 0.10}
       \resumeItemListEnd
 
     \resumeJob
@@ -166,7 +169,7 @@
       {Data Scientist Intern}
       \resumeItemListStart
         \resumeItem{Forecasted flight arrival delays with time series models, reducing RMSE by $\sim$15\% vs baseline models}
-        \resumeItem{Analyzed 2M+ flight records and conducted exploratory data analysis (EDA) with data cleaning and preprocessing}
+        \resumeItem{Engineered temporal features and evaluated seasonal patterns across 2M+ flight records to improve forecasts}
       \resumeItemListEnd
 
     \resumeJob
@@ -214,7 +217,7 @@
     \small{\item{
      \textbf{Activities}{: IM Soccer, Texas Dhoom (Bollywood Fusion Dance Team), Stats \& Data Science Directed Reading Program} \\
      \textbf{Interests}{: Soccer, Financial/Commodity Markets, Algorithmic Trading, College Football, Traveling, Card Games} \\
-     \textbf{Awards}{: 1st Place @ 2026 JPMC Data for Good, 3rd Place @ 2024 DECA ICDC, Top 20 @ 2026 Coinbase Bounty}
+     \textbf{Awards}{: 1st Place @ 2026 JPMC Data for Good Hackathon, 3rd Place @ 2024 DECA ICDC, Top 20 in Coinbase Bounty}
     }}
  \end{itemize}
  \vspace{-10pt}
