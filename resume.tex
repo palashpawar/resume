@@ -64,9 +64,9 @@
 
 % Experience entry with a single date column (no location)
 \newcommand{\resumeJob}[3]{
-  \vspace{-5pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & #2 \\[-3pt]
       \multicolumn{2}{l}{\textit{\small #3}} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -75,7 +75,7 @@
     \vspace{-4pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -112,9 +112,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     {\item{
-     \textbf{Languages}{: Python, R, SQL} \\
-     \textbf{Platforms}{: Databricks, Snowflake, MongoDB, AWS, GCP, Looker, Power BI, Tableau, PyTorch, TensorFlow} \\
-     \textbf{Techniques}{: Quantitative Analysis, Regression, Classification, NLP, LLMs, Computer Vision, A/B Testing}
+     \textbf{Languages \& Libraries}{: Python (pandas, NumPy, scikit-learn, PyTorch, TensorFlow, PySpark), R, SQL} \\
+     \textbf{Data \& Cloud Tools}{: Databricks, Snowflake, BigQuery, MongoDB, AWS, GCP, Tableau, Power BI, Looker} \\
+     \textbf{Techniques}{: Regression, Classification, Forecasting, Causal Inference, LLMs, Computer Vision, A/B Testing}
     }}
  \end{itemize}
  \vspace{-10pt}
@@ -187,7 +187,7 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Kalshi Earnings Mentions Bot} $|$ \emph{Claude Code, GCP Compute, SQLite, Kalshi API, SciPy, statsmodels, launchd}}{}
+          {\href{https://github.com/palashpawar/kalshi-earnings-edge}{\textbf{\underline{Kalshi Earnings Mentions Bot}}} $|$ \emph{Claude Code, GCP Compute, SQLite, Kalshi API, SciPy, statsmodels, launchd}}{}
           \resumeItemListStart
             \resumeItem{Backtested a systematic alpha across 5.19M Kalshi earnings-mention contracts (+4.1\textcent/contract alpha, t = 1.95)}
             \resumeItem{Deployed a 3-mode trading execution engine with risk-gating, scanning 850 instruments/$\sim$250K API calls per day}
@@ -195,7 +195,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{SPY Volatility Surface \& Options Market Maker} $|$ \emph{NumPy, SciPy, pandas, yfinance, pytest, scikit-learn}}{}
+          {\href{https://github.com/palashpawar/spy-vol-surface-mm}{\textbf{\underline{SPY Volatility Surface \& Options Market Maker}}} $|$ \emph{NumPy, SciPy, pandas, yfinance, pytest, scikit-learn}}{}
           \resumeItemListStart
             \resumeItem{Implemented a SPY options market maker with pricing, Greeks, implied-volatility surfaces, and real-market data}
             \resumeItem{Developed relative-value signals with inventory-aware quoting, transaction costs, and dynamic delta hedging}
@@ -203,7 +203,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Moneyball 2.0: Analyzing Value in the Global Soccer Transfer Market} $|$ \emph{tidyverse, caret, ggplot2}}{}
+          {\href{https://github.com/anikethk1/player_market_value_prediction}{\textbf{\underline{Moneyball 2.0: Analyzing Value in the Global Soccer Transfer Market}}} $|$ \emph{tidyverse, caret, ggplot2}}{}
           \resumeItemListStart
             \resumeItem{Built an end-to-end player valuation pipeline incorporating 30+ advanced performance features}
             \resumeItem{Analyzed valuation residuals to identify overvalued and undervalued players across leagues and positions}
